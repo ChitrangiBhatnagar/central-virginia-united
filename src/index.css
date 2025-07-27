@@ -17,37 +17,39 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 18%;
 
-    --primary: 207 100% 50%;
+    --primary: 42 100% 63%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 96%;
+    --secondary: 186 60% 65%;
     --secondary-foreground: 0 0% 18%;
 
-    --muted: 0 0% 96%;
+    --muted: 42 30% 95%;
     --muted-foreground: 0 0% 45%;
 
-    --accent: 207 100% 95%;
-    --accent-foreground: 207 100% 50%;
+    --accent: 178 59% 32%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 335 84% 47%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 90%;
-    --input: 0 0% 90%;
-    --ring: 207 100% 50%;
+    --border: 42 20% 90%;
+    --input: 42 20% 90%;
+    --ring: 42 100% 63%;
 
-    /* Telecom Brand Colors */
-    --telecom-blue: 207 100% 50%;
-    --telecom-dark: 0 0% 18%;
-    --telecom-light: 207 100% 97%;
+    /* Marmalade Toast Brand Colors */
+    --marmalade-orange: 42 100% 63%;
+    --marmalade-pink: 335 84% 47%;
+    --marmalade-burgundy: 330 51% 37%;
+    --marmalade-teal: 178 59% 32%;
+    --marmalade-blue: 186 60% 65%;
     
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(207 100% 50%), hsl(207 100% 70%));
-    --gradient-hero: linear-gradient(135deg, hsl(207 100% 50%), hsl(207 100% 35%));
-    --gradient-section: linear-gradient(180deg, hsl(207 100% 97%), hsl(0 0% 100%));
+    --gradient-primary: linear-gradient(135deg, hsl(42 100% 63%), hsl(335 84% 47%));
+    --gradient-hero: linear-gradient(135deg, hsl(42 100% 63%), hsl(330 51% 37%));
+    --gradient-section: linear-gradient(180deg, hsl(42 20% 97%), hsl(0 0% 100%));
     
     /* Shadows */
-    --shadow-telecom: 0 10px 30px -5px hsl(207 100% 50% / 0.3);
+    --shadow-marmalade: 0 10px 30px -5px hsl(42 100% 63% / 0.3);
     --shadow-card: 0 4px 20px -2px hsl(0 0% 0% / 0.1);
     
     /* Animations */

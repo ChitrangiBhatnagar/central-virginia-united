@@ -52,9 +52,11 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				'telecom-blue': 'hsl(var(--telecom-blue))',
-				'telecom-dark': 'hsl(var(--telecom-dark))',
-				'telecom-light': 'hsl(var(--telecom-light))',
+				'marmalade-orange': 'hsl(var(--marmalade-orange))',
+				'marmalade-pink': 'hsl(var(--marmalade-pink))',
+				'marmalade-burgundy': 'hsl(var(--marmalade-burgundy))',
+				'marmalade-teal': 'hsl(var(--marmalade-teal))',
+				'marmalade-blue': 'hsl(var(--marmalade-blue))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
