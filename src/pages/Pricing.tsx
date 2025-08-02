@@ -198,15 +198,15 @@ const Pricing = () => {
                     asChild
                   >
                     {plan.name === "Enterprise" ? (
-                      <Link to="/contact">
+                      <a href="https://salescentri.com/contact/sales-inquiry">
                         {plan.cta}
                         <ArrowRight className="ml-2 w-4 h-4" />
-                      </Link>
+                      </a>
                     ) : (
-                      <Link to="/contact">
+                      <a href="https://salescentri.com/get-started/free-trial">
                         {plan.cta}
                         <ArrowRight className="ml-2 w-4 h-4" />
-                      </Link>
+                      </a>
                     )}
                   </Button>
                 </CardContent>
@@ -312,13 +312,13 @@ const Pricing = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" asChild>
-              <Link to="/contact">
+              <a href="https://salescentri.com/get-started/free-trial">
                 Start Free Trial
                 <ArrowRight className="ml-2 w-4 h-4" />
-              </Link>
+              </a>
             </Button>
             <Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-primary" asChild>
-              <Link to="/contact">Talk to Sales</Link>
+              <a href="https://salescentri.com/contact/sales-inquiry">Talk to Sales</a>
             </Button>
           </div>
         </div>

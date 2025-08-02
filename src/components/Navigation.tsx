@@ -36,26 +36,39 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {navigation.map((item) => (
-              <Link
-                key={item.name}
-                to={item.href}
-                className={`text-sm font-medium transition-colors duration-200 hover:text-primary ${
-                  isActive(item.href) ? "text-primary" : "text-muted-foreground"
-                }`}
-              >
-                {item.name}
-              </Link>
-            ))}
+            {navigation.map((item) => {
+              if (item.name === "Blog") {
+                return (
+                  <a
+                    key={item.name}
+                    href="https://salescentri.com/resources/whitepapers-ebooks/?utm_source=centralvirginiaunited.com&utm_medium=navigation&utm_campaign=telecom_insights"
+                    className="text-sm font-medium transition-colors duration-200 hover:text-primary text-muted-foreground"
+                  >
+                    {item.name}
+                  </a>
+                );
+              }
+              return (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className={`text-sm font-medium transition-colors duration-200 hover:text-primary ${
+                    isActive(item.href) ? "text-primary" : "text-muted-foreground"
+                  }`}
+                >
+                  {item.name}
+                </Link>
+              );
+            })}
           </div>
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center space-x-4">
             <Button variant="outline" size="sm" asChild>
-              <Link to="/contact">Book Demo</Link>
+              <a href="https://salescentri.com/get-started/book-demo">Book Demo</a>
             </Button>
             <Button size="sm" asChild>
-              <Link to="/pricing">Start Free Trial</Link>
+              <a href="https://salescentri.com/get-started/free-trial">Start Free Trial</a>
             </Button>
           </div>
 
@@ -74,28 +87,42 @@ const Navigation = () => {
         {isOpen && (
           <div className="md:hidden py-4 border-t border-border">
             <div className="flex flex-col space-y-2">
-              {navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  className={`px-3 py-2 text-sm font-medium transition-colors duration-200 hover:text-primary ${
-                    isActive(item.href) ? "text-primary" : "text-muted-foreground"
-                  }`}
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.name}
-                </Link>
-              ))}
+              {navigation.map((item) => {
+                if (item.name === "Blog") {
+                  return (
+                    <a
+                      key={item.name}
+                      href="https://salescentri.com/resources/whitepapers-ebooks/?utm_source=centralvirginiaunited.com&utm_medium=navigation&utm_campaign=telecom_insights"
+                      className="px-3 py-2 text-sm font-medium transition-colors duration-200 hover:text-primary text-muted-foreground"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      {item.name}
+                    </a>
+                  );
+                }
+                return (
+                  <Link
+                    key={item.name}
+                    to={item.href}
+                    className={`px-3 py-2 text-sm font-medium transition-colors duration-200 hover:text-primary ${
+                      isActive(item.href) ? "text-primary" : "text-muted-foreground"
+                    }`}
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                );
+              })}
               <div className="flex flex-col space-y-2 pt-4">
                 <Button variant="outline" size="sm" asChild>
-                  <Link to="/contact" onClick={() => setIsOpen(false)}>
+                  <a href="https://salescentri.com/get-started/book-demo" onClick={() => setIsOpen(false)}>
                     Book Demo
-                  </Link>
+                  </a>
                 </Button>
                 <Button size="sm" asChild>
-                  <Link to="/pricing" onClick={() => setIsOpen(false)}>
+                  <a href="https://salescentri.com/get-started/free-trial" onClick={() => setIsOpen(false)}>
                     Start Free Trial
-                  </Link>
+                  </a>
                 </Button>
               </div>
             </div>

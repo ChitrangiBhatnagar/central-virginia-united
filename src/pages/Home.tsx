@@ -90,13 +90,13 @@ const Home = () => {
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="shadow-lg hover:shadow-xl transition-all duration-300" asChild>
-                  <Link to="/pricing">
+                  <a href="https://salescentri.com/get-started/free-trial">
                     Start Free Trial
                     <ArrowRight className="ml-2 w-4 h-4" />
-                  </Link>
+                  </a>
                 </Button>
                 <Button variant="outline" size="lg" asChild>
-                  <Link to="/contact">Book Demo</Link>
+                  <a href="https://salescentri.com/get-started/book-demo">Book Demo</a>
                 </Button>
               </div>
 
@@ -284,13 +284,13 @@ const Home = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" asChild>
-              <Link to="/pricing">
+              <a href="https://salescentri.com/get-started/free-trial">
                 Start Free Trial
                 <ArrowRight className="ml-2 w-4 h-4" />
-              </Link>
+              </a>
             </Button>
             <Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-primary" asChild>
-              <Link to="/contact">Schedule Demo</Link>
+              <a href="https://salescentri.com/get-started/book-demo">Schedule Demo</a>
             </Button>
           </div>
         </div>

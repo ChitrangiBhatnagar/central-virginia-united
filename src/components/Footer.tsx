@@ -39,7 +39,7 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold mb-4">Resources</h3>
             <ul className="space-y-2 text-sm">
-              <li><Link to="/blog" className="text-gray-300 hover:text-primary transition-colors">Blog</Link></li>
+              <li><a href="https://salescentri.com/resources/whitepapers-ebooks/?utm_source=centralvirginiaunited.com&utm_medium=footer&utm_campaign=telecom_insights" className="text-gray-300 hover:text-primary transition-colors">Blog</a></li>
               <li><Link to="/pricing" className="text-gray-300 hover:text-primary transition-colors">Pricing</Link></li>
               <li><Link to="/contact" className="text-gray-300 hover:text-primary transition-colors">Support</Link></li>
               <li><a href="/privacy" className="text-gray-300 hover:text-primary transition-colors">Privacy Policy</a></li>

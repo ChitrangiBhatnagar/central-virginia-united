@@ -322,10 +322,10 @@ const About = () => {
                 Atlanta's thriving tech ecosystem provides the perfect base for our global operations. From here, we serve customers across six continents while maintaining our Southern hospitality and commitment to customer service.
               </p>
               <Button asChild>
-                <Link to="/contact">
+                <a href="https://salescentri.com/contact">
                   Visit Our Office
                   <ArrowRight className="ml-2 w-4 h-4" />
-                </Link>
+                </a>
               </Button>
             </div>
 
@@ -365,13 +365,13 @@ const About = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" asChild>
-              <Link to="/contact">
+              <a href="https://salescentri.com/contact">
                 Get in Touch
                 <ArrowRight className="ml-2 w-4 h-4" />
-              </Link>
+              </a>
             </Button>
             <Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-primary" asChild>
-              <Link to="/pricing">View Pricing</Link>
+              <a href="https://salescentri.com/pricing">View Pricing</a>
             </Button>
           </div>
         </div>

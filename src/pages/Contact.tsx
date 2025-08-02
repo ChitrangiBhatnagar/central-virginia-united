@@ -327,19 +327,25 @@ const Contact = () => {
                 <CardContent className="p-6 space-y-4">
                   <h3 className="font-semibold text-telecom-dark mb-4">Quick Actions</h3>
                   
-                  <Button className="w-full justify-start" variant="outline">
-                    <Calendar className="w-4 h-4 mr-2" />
-                    Schedule a Demo
+                  <Button className="w-full justify-start" variant="outline" asChild>
+                    <a href="https://salescentri.com/get-started/book-demo">
+                      <Calendar className="w-4 h-4 mr-2" />
+                      Schedule a Demo
+                    </a>
                   </Button>
                   
-                  <Button className="w-full justify-start" variant="outline">
-                    <Headphones className="w-4 h-4 mr-2" />
-                    Technical Support
+                  <Button className="w-full justify-start" variant="outline" asChild>
+                    <a href="https://salescentri.com/contact/support-request">
+                      <Headphones className="w-4 h-4 mr-2" />
+                      Technical Support
+                    </a>
                   </Button>
                   
-                  <Button className="w-full justify-start" variant="outline">
-                    <Phone className="w-4 h-4 mr-2" />
-                    Sales Consultation
+                  <Button className="w-full justify-start" variant="outline" asChild>
+                    <a href="https://salescentri.com/contact/sales-inquiry">
+                      <Phone className="w-4 h-4 mr-2" />
+                      Sales Consultation
+                    </a>
                   </Button>
                 </CardContent>
               </Card>
@@ -374,12 +380,14 @@ const Contact = () => {
             Join thousands of companies already using iGCT to scale their global operations.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" variant="secondary">
-              Start Free Trial
-              <ArrowRight className="ml-2 w-4 h-4" />
+            <Button size="lg" variant="secondary" asChild>
+              <a href="https://salescentri.com/get-started/free-trial">
+                Start Free Trial
+                <ArrowRight className="ml-2 w-4 h-4" />
+              </a>
             </Button>
-            <Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-primary">
-              View Pricing
+            <Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-primary" asChild>
+              <a href="https://salescentri.com/pricing">View Pricing</a>
             </Button>
           </div>
         </div>
